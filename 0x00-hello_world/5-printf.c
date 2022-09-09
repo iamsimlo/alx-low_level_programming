@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-(* main - Entry point 
+* main - Entry point 
 * printf prints string
-* Return: always 0(Success))*
+(* Return: always 0(Success))*
 * \n introduces new line break  
 */
 int main(void)
