@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
-(* main entry point 
- * printf prints string)*
+(* main - Entry point 
+ * printf prints string
  * Return: always 0(Success)
- (* n introduces new line break)*  
+ * n introduces new line break)*  
  */
 int main(void)
 {
