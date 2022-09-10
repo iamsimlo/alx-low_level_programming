@@ -11,6 +11,7 @@ int main(void)
 	int i;
 	long int lint;
 	long long int lo;
+	/*declarations of data types above*/
 	printf("Size of a char: %ld byte\n", sizeof(char_size));
 	printf("Size of a float: %ld byte\n", sizeof(fl));
 	printf("Size of an int: %ld byte\n", sizeof(i));
