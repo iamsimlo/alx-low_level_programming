@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
-* main - Entry point 
+* main - Entry point
 * printf prints string
 (* Return: always 0(Success))*
-* \n introduces new line break  
+* n introduces new line break
 */
 int main(void)
 {
-printf("with proper grammar, but the outcome is a piece of art,\n"); 
+printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
 }
