@@ -12,10 +12,10 @@ int main(void)
 	long int lint;
 	long long int lo;
 	/*declarations of data types above*/
-	printf("Size of a char: %ld byte\n", sizeof(char_size));
-	printf("Size of a float: %ld byte\n", sizeof(fl));
-	printf("Size of an int: %ld byte\n", sizeof(i));
-	printf("Size of a long int: %ld byte\n", sizeof(lint));
-	printf("Size of a long long int: %ld bytes\n", sizeof(lo));
+	printf("Size of a char: %ld byte(s)\n", sizeof(char_size));
+	printf("Size of a float: %ld byte(s)\n", sizeof(fl));
+	printf("Size of an int: %ld byte(s)\n", sizeof(i));
+	printf("Size of a long int: %ld byte(s)\n", sizeof(lint));
+	printf("Size of a long long int: %ld bytes(s)\n", sizeof(lo));
 	return (0);
 }
