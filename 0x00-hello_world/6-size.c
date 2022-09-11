@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Define data ans their size
- * Return: alwys 0 (Success)
+ * Define datatype and their size
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
