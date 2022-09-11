@@ -9,8 +9,8 @@ int main(void)
 	char c;
 	float fl;
 	int i;
-	long int lint;
-	long long int lo;
+	long lint;
+	long long lo;
 	/*declarations of data types above*/
 	printf("Size of a char: %ld byte(s)\n", sizeof(c));
 	printf("Size of a float: %ld byte(s)\n", sizeof(fl));
