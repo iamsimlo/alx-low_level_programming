@@ -9,11 +9,12 @@ int main(void)
 {
 	/*Declare char as cr*/
 	char cr;
-	/*putchar once off usage*/
+	/*print lowercase alphabets*/
 	for (cr = 'a'; cr <= 'z'; cr++)
 	{
 	putchar(cr);
 	}
+	/*print uppercase alphabets*/
 	for (cr = 'A'; cr <= 'Z'; cr++)
 	{
 	putchar(cr);
