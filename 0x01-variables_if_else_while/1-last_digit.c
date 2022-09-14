@@ -1,32 +1,32 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
+#include <stdlib.h>
 /**
  * main - Entry point
  *
- * Return: Always 0(success)
+ * Return: always 0(Success)
  */
 int main(void)
-	{
-	{
-	int last_digit, n;
-	/*Random number generator*/
+{
+	int n;
+	int lastdigit;
+  /* Random num generator function, uses time resources from local system.*/
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* to find last digit formulae */
-	last_digit = n % 10;
-	}
-	if (last_digit > 5)
+  /* function to find the last digit */
+	lastdigit = n % 10;
+  /* Inserting if else statements */
+	if (lastdigit == 0)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);
+	printf("Last digit of %d is %d and is %d\n", n, lastdigit, lastdigit);
 	}
-	else if (last_digit == 0)
+	else if (lastdigit > 5)
 	{
-		printf("Last digit of %d is %d then is %d\n", n, last_digit, n);
+	printf("Last digit of %d is %d and is greater than 5.\n", n, lastdigit);
 	}
-	else if (last_digit < 0 && last_digit != 0)
+	else
 	{
-		printf("Last digit of %d is %d and is less than 6 not 0\n", n, last_digit);
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastdigit);
 	}
 	return (0);
-	}
+}
