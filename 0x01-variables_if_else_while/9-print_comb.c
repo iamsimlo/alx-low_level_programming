@@ -1,0 +1,23 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ * program print spaced out numbers with commas
+ *
+ * Return: Always 0(success)
+ */
+int main(void)
+{
+	int i;
+
+	for (i = 48; i <= 57; i++)
+	{
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+	}
+		putchar('\n');
+	return (0);
+}
