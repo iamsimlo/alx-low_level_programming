@@ -5,30 +5,24 @@
  *		 and then adds a terminating null byte
  * @dest: A pointer to the string to be concatenated upon.
  * @src: The source string to be appended to dest.
- *
+ * int i - function declaration
  * Return: A pointer to the destination string @dest.
  */
-int len(char *dest)
+int i(char *dest)
 {
-	return ((*dest != '\0') ? 1 + len(dest + 1) : 0);
+	return ((*dest != '\0') ? 1 + i(dest++) : 0);
 }
-/**
- * _strcat - function that copies a string.
- * @dest: This is pointer to the destination array.
- * @src: This is the string to be appended.
- * Return: dest.
- */
 
 char *_strcat(char *dest, char *src)
 {
-	char *d_itter = dest + len(dest);
+	char *dub = dest + i(dest);
 
 	while (*src != '\0')
 	{
-		*d_itter = *src;
+		*dub = *src;
 		src = src + 1;
-		d_itter = d_itter + 1;
+		dub = dub + 1;
 	}
-	*d_itter = *src;
+	*dub = *src;
 	return (dest);
 }
