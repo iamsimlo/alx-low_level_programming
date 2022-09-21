@@ -8,15 +8,27 @@
  *
  * Return: A pointer to the destination string @dest.
  */
-char *strcat(char *dest, const char *src)
+int len(char *dest)
 {
-	int index = 0, dest_len = 0;
+	return ((*dest != '\0') ? 1 + len(dest + 1) : 0);
+}
+/**
+ * _strcat - function that copies a string.
+ * @dest: This is pointer to the destination array.
+ * @src: This is the string to be appended.
+ * Return: dest.
+ */
 
-	while (dest[index++])
-		dest_len++;
+char *_strcat(char *dest, char *src)
+{
+	char *d_itter = dest + len(dest);
 
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
-
+	while (*src != '\0')
+	{
+		*d_itter = *src;
+		src = src + 1;
+		d_itter = d_itter + 1;
+	}
+	*d_itter = *src;
 	return (dest);
 }
