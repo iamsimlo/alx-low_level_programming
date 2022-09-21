@@ -1,8 +1,8 @@
 #include "main.h"
 /**
 * add - print the result of the sum
-* a - num1
-* b - num2
+* @a: The first integer to be added.
+* @b: The second integer to be added.
 * Return: Always 0.
 */
 
