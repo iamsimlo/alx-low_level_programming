@@ -1,28 +1,30 @@
 #include "main.h"
 /**
- * _strcat -this function appends the src string to the dest string,
- *		 overwriting the terminating null byte (\0) at the end of dest
- *		 and then adds a terminating null byte
- * @dest: A pointer to the string to be concatenated upon.
- * @src: The source string to be appended to dest.
- * int i - function declaration
- * Return: A pointer to the destination string @dest.
+ * len - Function calculates the length of a given string.
+ * @dest: pointer to destination.
+ * Return: Always 0.
  */
-int i(char *dest)
+int len(char *dest)
 {
-	return ((*dest != '\0') ? 1 + i(dest++) : 0);
+	return ((*dest != '\0') ? 1 + len(dest + 1) : 0);
 }
+/**
+ * _strcat - function that copies a string.
+ * @dest: This is pointer to the destination array.
+ * @src: This is the string to be appended.
+ * Return: dest.
+ */
 
 char *_strcat(char *dest, char *src)
 {
-	char *dub = dest + i(dest);
+	char *d_itter = dest + len(dest);
 
 	while (*src != '\0')
 	{
-		*dub = *src;
-		src = src + 1;
-		dub = dub + 1;
+		*d_itter = *src;
+		src++;
+		d_itter++;
 	}
-	*dub = *src;
+	*d_itter = *src;
 	return (dest);
 }
