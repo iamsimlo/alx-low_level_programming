@@ -9,9 +9,10 @@
  */
 int mul(int a, int b)
 {
-	/* ask for user input */
+	/* ask for user input
 	printf("Please enter 2 numbers: ");
 	scanf("%d %d", &a, &b);
+	*/
 	return (a * b);
 
 }
